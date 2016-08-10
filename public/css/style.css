@@ -79,3 +79,7 @@ footer.page-footer .footer-copyright {
 .brand-logo {
 	cursor: pointer;
 }
+
+#postAProduct { 
+	width: 60% !important  
+} 

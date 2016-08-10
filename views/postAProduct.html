@@ -26,17 +26,15 @@
       <div class="nav-wrapper">
         <a class="brand-logo swap">SwapThing</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a class="learnMore">Learn More</a></li>
-        <li><a class="modal-trigger" href="#modal3">Post A Prodcut</a></li>
-        <li><a class="modal-trigger" href="#modal2">Login</a></li>
+        <li><a class="modal-trigger" href="#postAProduct">Post A Prodcut</a></li>
         </ul>
       </div>
     </nav>
 
 
   <!-- Sign Up Modal Structure -->
-    <div id="modal3" class="modal">
-      <div class="modal-content">
+    <div id="postAProduct" class="modal">
+      <div class="modal-content ">
         <h4>Post A Product</h4>
         <p>Tell us a bit about what you're swapping</p>
           <form>
@@ -67,8 +65,7 @@
 
                 <input class="with-gap" name="productType" type="radio" id="apperal"/>
                 <label for="apperal">Apperal</label>
-              </p>
-              <p>
+
                 <input class="with-gap" name="productType" type="radio" id="media"/>
                 <label for="media">Media</label>
 
@@ -83,18 +80,24 @@
 
             <form action="#">
             <h5>What condition is your product in?</h5>
-            <h6>1 meaning poor, 5 meaning excellent</h6>
-              <p class="range-field">
-                <input type="range" id="test5" min="1" max="5" step="1" list="steplist"/>
-                <datalist id="steplist">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </datalist>
+              <p>
+                <input class="with-gap" name="productType" type="radio" id="poor"/>
+                <label for="poor">Heavily used</label>
+
+                <input class="with-gap" name="productType" type="radio" id="fair"/>
+                <label for="fair">More than average use</label>
+
+                <input class="with-gap" name="productType" type="radio" id="average"/>
+                <label for="average">Used from time to time</label>
+
+                <input class="with-gap" name="productType" type="radio" id="good"/>
+                <label for="good">Hardly used</label>
+
+                <input class="with-gap" name="productType" type="radio" id="excellent"/>
+                <label for="excellent">Basically new</label> 
               </p>
             </form>
+            <br>
 
           </form>
           <div class="modal-footer">
@@ -103,36 +106,6 @@
           </div>
       </div>
     </div>
-
-
-
-
-    <!-- Login Modal Structure -->
-    <div id="modal2" class="modal">
-      <div class="modal-content">
-        <h4>Login to your account</h4>
-        <p>You'll be swapping in minutes!</p>
-          <form>
-           <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">E-mail</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-              </div>
-            </div> 
-          </form>
-          <div class="modal-footer">
-            <button class="btn waves-effect waves-light left" type="submit" name="action">Login
-            </button>
-          </div>
-      </div>
-    </div>
-
 
 
       <!--Import jQuery before materialize.js-->
